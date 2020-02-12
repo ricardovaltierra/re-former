@@ -4,7 +4,7 @@ Re-Former
 This is part of the Forms Project in The Odin Project’s Ruby on Rails Curriculum. Find it at http://www.theodinproject.com
 
 ## What it does?
-This is a basic form created on MVC basis using rails model and controller properties
+Basic form created on MVC basis using rails model and controller properties to populate a users DB and make upadates
 
 ## How it works?
 The Model is working on top of the following resources:

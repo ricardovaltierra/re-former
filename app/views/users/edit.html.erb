@@ -1,3 +1,4 @@
+<!-- Catching errors from controller -->
 <% if @user.errors.any? %>
 <ul>
   <% @user.errors.full_messages.each do |message| %>
@@ -6,7 +7,7 @@
 </ul>
 <% end %>
 
-
+<!-- form_for FORM -->
 <%= form_for @user do |f| %>
   Give a username: <%= f.text_field :username, placeholder: "username"%>
   <br>
@@ -17,7 +18,7 @@
   <%= f.submit "Create" %>
 <% end %>
 
-<!--
+<!-- classic FORM
 <form action="/users" method="post" accept-charset="UTF-8">
   <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
   <label for="user_username">Username:</label>
@@ -31,8 +32,9 @@
   </br>
   <input type="submit">
 </form>
+-->
 
-
+<!-- form_tag FORM
 <%= form_tag("/users", method: "post") do %>
   <%= label_tag(:username, "Username:") %>
   <%= text_field_tag "user[username]", @user.username %>
